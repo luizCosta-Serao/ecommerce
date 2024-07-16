@@ -58,3 +58,48 @@
   font-weight: 400;
   font-size: 20px;
 }
+
+.lista-produtos {
+  margin-top: 32px;
+}
+
+.lista-produtos > div {
+  display: flex;
+  gap: 32px;
+}
+
+.produto-single {
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #B4BECC;
+}
+
+.produto-single img {
+  height: 200px;
+  width: 200px;
+}
+
+.produto-single h2 {
+  font-size: 24px;
+  color: #3D4857;
+  font-weight: 400;
+  margin-bottom: 8px;
+  max-width: 250px;
+}
+
+.produto-single p {
+  color: #29313B;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.produto-single a {
+  background-color: #E5A223;
+  padding: 16px;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #29313B;
+  align-self: center;
+  text-decoration: none;
+}
