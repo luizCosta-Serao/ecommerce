@@ -23,7 +23,7 @@
       <nav>
         <ul>
           <li><a href="<?php echo INCLUDE_PATH ?>">Carrinho (<?php echo $cartTotal; ?>)</a></li>
-          <li class="finalizar"><a href="<?php echo INCLUDE_PATH ?>">Finalizar Pedido</a></li>
+          <li class="finalizar"><a href="<?php echo INCLUDE_PATH ?>finalizar-pedido">Finalizar Pedido</a></li>
         </ul>
       </nav>
     </section>
