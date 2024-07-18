@@ -103,3 +103,54 @@
   align-self: center;
   text-decoration: none;
 }
+
+.lista-pedidos {
+  padding: 40px;
+}
+
+.lista-pedidos h2 {
+  color: #29313B;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.lista-pedidos table {
+  width: 100%;
+  max-width: 800px;
+}
+
+.lista-pedidos table tr:first-child {
+  font-weight: bold;
+}
+
+.lista-pedidos table tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.lista-pedidos table tr td {
+  display: inline-block;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.finalizar-pedido {
+  padding: 40px;
+}
+
+.finalizar-pedido h2 {
+  margin-bottom: 16px;
+  color: #29313B;
+  font-size: 24px;
+}
+
+.btn-pagamento {
+  display: inline-block;
+  background-color: #E5A223;
+  color: #29313B;
+  font-weight: 700;
+  padding: 16px;
+  text-decoration: none;
+}
