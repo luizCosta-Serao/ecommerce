@@ -8,7 +8,13 @@
   <title>Ecommerce</title>
 </head>
 <body>
-  
+  <?php
+    // Obtendo quantidade de itens diferentes no carrinho
+    $cart = MySql::connect()->prepare("SELECT * FROM `cart`");
+    $cart->execute();
+    $cart = $cart->fetchAll();
+    $cartTotal = count($cart);
+  ?>
   <header class="header">
     <section class="container">
       <div>
@@ -16,7 +22,7 @@
       </div>
       <nav>
         <ul>
-          <li><a href="<?php echo INCLUDE_PATH ?>">Carrinho (0)</a></li>
+          <li><a href="<?php echo INCLUDE_PATH ?>">Carrinho (<?php echo $cartTotal; ?>)</a></li>
           <li class="finalizar"><a href="<?php echo INCLUDE_PATH ?>">Finalizar Pedido</a></li>
         </ul>
       </nav>
