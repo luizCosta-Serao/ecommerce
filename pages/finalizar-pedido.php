@@ -71,4 +71,8 @@
   <form id="boleto" action="" method="post">
       <input type="submit" id="gerar_boleto" value="Gerar Boleto">
   </form>
+
+  <form id="pix" action="" method="post">
+      <input type="submit" id="pagar_pix" value="Pagar com Pix">
+  </form>
 </section>

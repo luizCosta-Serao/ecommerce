@@ -48,6 +48,18 @@ $(function() {
     })
   })
 
+    // Pagamento com pix
+    $('#pix').submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+        url: 'http://localhost/ecommerce/ecommerce_php/ajax/pix.php',
+        method: 'post',
+        dataType: 'json'
+      }).done(function(data) {
+        console.log(data.qr_codes[0].links[0].href)
+      })
+    })
+
   /*
   $('form').submit(function(e) {
     e.preventDefault();
