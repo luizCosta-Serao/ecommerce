@@ -35,6 +35,19 @@ $(function() {
     publicKey = data.public_key;
   })
 
+  // Pagamento com boleto
+  $('#boleto').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: 'http://localhost/ecommerce/ecommerce_php/ajax/boleto.php',
+      method: 'post',
+      dataType: 'json'
+    }).done(function(data) {
+      console.log(data.links[0].href)
+      location.href = data.links[0].href
+    })
+  })
+
   /*
   $('form').submit(function(e) {
     e.preventDefault();

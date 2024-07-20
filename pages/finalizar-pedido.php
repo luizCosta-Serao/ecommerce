@@ -67,4 +67,8 @@
 
     <input type="submit" class="btn-pagamento" name="enviar" id="enviar" value="Enviar Pagamento">
   </form>
+
+  <form id="boleto" action="" method="post">
+      <input type="submit" id="gerar_boleto" value="Gerar Boleto">
+  </form>
 </section>
