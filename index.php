@@ -38,5 +38,8 @@
     }
   ?>
   
+  <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
+  <script src="https://assets.pagseguro.com.br/checkout-sdk-js/rc/dist/browser/pagseguro.min.js"></script>
+  <script src="<?php echo INCLUDE_PATH; ?>js/index.js"></script>
 </body>
 </html>
